@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+
+
+  /* <!-- NavBar --> */
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 0.5rem;
+    background:#444444;
+    z-index: 1000000;
+    box-shadow: black 0px 10px 20px;
+    position: fixed;
+  }
+
+  #item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #item li{
+    list-style: none;
+    padding-right: 50px;
+  }
+
+  #item li a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  #item li a:hover, #item .icon i:hover{
+    color: #ff5733;
+    cursor: pointer;
+  }
+
+  #item .icon i{
+    padding-right: 30px;
+    color: whitesmoke;
+  }
+    
+ /*Background and OverLay */
+
+  .background{
+    background-image: url(assets/background-2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .background .overlay{
+        background: #171819;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+  }
+
+  .mid{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+
+  .mid p{
+    color: #EAEFF2 ;
+    font-size: 1.3rem; 
+    margin-bottom: 1.4rem;
+  }
+
+  .mid h1{
+    color: #fff ;
+    font-size: 3rem; 
+  }
+
+  .mid .btn{
+    margin-top: 2rem;
+  }
+
+  .mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .mid .btn a.simple{
+    color: #fff;
+    font-weight: 700;
+    padding: 0.9rem 1.6rem;
+  }
+
+  .mid .btn a.simple:hover{
+    color: #ff5733;
+  }
+
+  .mid .btn a.border{
+    color: #ff5733;
+    border: 1px solid #ff5733 ;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+  }
+
+  .mid .btn a.border:hover{
+    background-color: white;
+    border: 1px solid white;
+  }
+
+
+  /*Part -1 */
+  .part-1{
+    background-color: rgb(236, 236, 234);
+    height: 1000px;
+  }
+  .part-1 p{
+    padding-top: 50px;
+    text-align: center;
+    left: 50%;
+    letter-spacing: 5px;
+  }
+
+  .choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+   .choice-buy{
+    background-image: url(assets/background-1.jpg);
+    width: 40%;
+    height: 50vh;
+    background-size: cover;
+    /* margin-left: 50px;
+    margin-top: 50px; */
+    border-radius: 5px;
+  } 
+
+  .buy-overlay{
+       background: rgb(188, 124, 146);
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        border-radius: 5px;
+  }
+
+
+  .choice-rent{
+    background-image: url(assets/background-3.jpg);
+    width: 40%;
+    height: 50vh;
+    background-size: cover;
+    /* margin-left: 900px;
+    margin-top: 10px; */
+    border-radius: 5px;
+
+  } 
+
+  .rent-overlay{
+       background: rgb(64, 60, 81);
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        border-radius: 5px;
+  }
+
+  .buy-btn{
+    position: absolute;
+    top: 150%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+
+
+  .buy-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .buy-btn a{
+    color: #fff;
+    border: 1px solid #fff ;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+  }
+
+  .buy-btn a:hover{
+    background-color: #ff5733;
+    border: 1px solid #ff5733;
+  }
+
+
+
+  .rent-btn{
+    position: absolute;
+    top: 150%;
+    left: 76%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+
+
+  .rent-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .rent-btn a{
+    color: #fff;
+    border: 1px solid #fff ;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+  }
+
+  .rent-btn a:hover{
+    background-color: #ff5733;
+    border: 1px solid #ff5733;
+  }
+
+
+
+
+
